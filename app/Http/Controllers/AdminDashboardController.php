@@ -17,7 +17,7 @@ class AdminDashboardController extends Controller
 
     public function dashboard()
     {
-        return  view('Admin.maindashboard');
+        return  view('Admin.maincontent');
     }
     public function logout()    
     {
