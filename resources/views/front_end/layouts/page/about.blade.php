@@ -1,3 +1,5 @@
+@extends('front_end.layouts.index')
+@section('content')
 <div class="axil-about-us-area ax-section-gap bg-color-white axil-shape-position">
     <div class="container">
         <div class="row">
@@ -71,4 +73,7 @@
         </div>
     </div>
     <!-- End Shape Group  -->
-</div>
+</div>  
+
+@endsection
+

@@ -26,7 +26,9 @@ use Illuminate\Support\Facades\Route;
     
     Route::post('/loginpage','AuthController@login')->name('loginpage');
     Route::get('/login','AuthController@index')->name('login');
-    Route::get('/','HomeController@index')->name('home');
+    Route::get('/','HomeController@index');
+    // Route::get('/','HomeController@index')->name('home');
+    Route::get('/About','AboutController@about')->name('About');
    
 Route::group(['middleware' =>['auth']],function(){
 
@@ -38,8 +40,49 @@ Route::group(['middleware' =>['auth']],function(){
     Route::post('/Portfolioinsert','PortfolioController@index')->name('Portfolioinsert');
     Route::get('/Portfoliolist','PortfolioController@getportfolio')->name('Portfoliolist');
     Route::post('/PortfoliostatusUpdate','PortfolioController@portfolioUpdate')->name('PortfoliostatusUpdate');
-    Route::get('/PortfolioDelete/{id}','PortfolioController@portfolioDelete')->name('PortfolioDelete');
-  
+    Route::get('/Delete-portfolio/{id}','PortfolioController@portfolioDelete')->name('PortfolioDelete');
+    //finished Web Portfolio
+
+   //start mobile Portfolio
+   Route::get('/MobilepageAdd','MobileController@create')->name('MobilepageAdd');
+   Route::post('/MobileInsert','MobileController@index')->name('MobileInsert');
+   Route::get('/MobileList','MobileController@GetMobilelist')->name('MobileList');
+   Route::post('/MobileStatusUpdate','MobileController@GetMobileliststatus')->name('MobileStatusUpdate');
+   Route::get('/Delete-Mobile/{id}','MobileController@deletemobile')->name('deletemobile');
+     //finished MObile Porftolio
+
+     //start Ui Portfolio
+     Route::get('/UipageAdd','UiController@create')->name('UipageAdd');
+     Route::post('/UiInsert','UiController@index')->name('UiInsert');
+     Route::get('/AllUiList','UiController@GetUilist')->name('AllUiList');
+     Route::post('/UiStatusUpdate','UiController@GetUiliststatus')->name('UiStatusUpdate');
+     Route::get('/Delete-Ui/{id}','UiController@deleteui')->name('UiDelete');
+     //finished Ui Portfolio
+
+     //start client add
+     Route::get('/clientpageAdd','ClientController@pageadd')->name('clientpageAdd');
+     Route::post('/clientinsert','ClientController@create')->name('clientinsert');
+     Route::get('/Allclient','ClientController@getallclient')->name('Allclient');
+     Route::post('/changeClientstatus','ClientController@changeclientstatus')->name('changeClientstatus');
+     Route::get('/Delete-client/{id}','ClientController@deleteclient')->name('delete-client');
+     //finished testimonials
+
+     //start Testimonials
+     Route::get('/Testimonialpageadd','TestimonialsController@testimonialspageadd')->name('Testimonialpageadd');
+     Route::post('/TestimonialInsert','TestimonialsController@create')->name('TestimonialInsert');
+     Route::get('/AllTestimonial','TestimonialsController@GetAllTestimonials')->name('AllTestimonial');
+     Route::post('/changetestmonialstatus','TestimonialsController@changestatus')->name('changetestmonialstatus');
+     Route::get('/Delete-Testimonials/{id}','TestimonialsController@delettestimonials');
+     //finished Testimonials
+      
+     //start Team
+     Route::get('/TeampageAdd','TeamController@teampageadd')->name('TeampageAdd');
+     Route::post('/TeamdataAdd','TeamController@create')->name('TeamdataAdd');
+     Route::get('/AllMember','TeamController@GetAllMember')->name('AllMember');
+     Route::post('/changeteamstatus','TeamController@changestatus')->name('changeteamstatus');
+     Route::get('/Delete-Team/{id}','TeamController@deleteteam');
+   
+
 });
 
 

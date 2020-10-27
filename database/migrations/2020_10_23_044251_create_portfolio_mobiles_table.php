@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class CreatePortfoilsTable extends Migration
+class CreatePortfolioMobilesTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,9 +13,9 @@ class CreatePortfoilsTable extends Migration
      */
     public function up()
     {
-        Schema::create('portfoils', function (Blueprint $table) {
+        Schema::create('portfolio_mobiles', function (Blueprint $table) {
             $table->bigIncrements('id');
-            $table->string('portfolio_image');
+            $table->string('portfolio_mobile_image');
             $table->string('link')->nullable();
             $table->text('details')->nullable();
             $table->boolean('status')->default(0);
@@ -30,6 +30,6 @@ class CreatePortfoilsTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('portfoils');
+        Schema::dropIfExists('portfolio_mobiles');
     }
 }

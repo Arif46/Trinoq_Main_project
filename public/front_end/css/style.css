@@ -5881,6 +5881,7 @@ textarea:-ms-input-placeholder {
 
 .ax-section-gap {
   padding: 130px 0;
+  margin-top:-24px;
 }
 
 @media only screen and (min-width: 768px) and (max-width: 991px) {

@@ -6,6 +6,7 @@ use Illuminate\Http\Request;
 use Validator;
 use App\Portfolio;
 use Image;
+use Session;
 
 class PortfolioController extends Controller
 {
@@ -57,8 +58,8 @@ class PortfolioController extends Controller
     {
           Portfolio::where('id',$id)->delete();
           $message="profolio sucessfully deleted";
-         Session::flash('message',$message);
-        return redirect()->back();
+          Session::flash('message',$message);
+          return redirect()->back();
  
     }
 }

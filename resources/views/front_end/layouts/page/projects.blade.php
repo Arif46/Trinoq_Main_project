@@ -13,7 +13,7 @@
                     <button data-filter=".cat--1"><span class="filter-text">UX/UI</span></button>
                     <button data-filter=".cat--2"><span class="filter-text">Web</span></button>
                     <button data-filter=".cat--3"><span class="filter-text">Mobile</span></button>
-                    <button data-filter=".cat--4"><span class="filter-text">Branding</span></button>
+                    {{-- <button data-filter=".cat--4"><span class="filter-text">Branding</span></button> --}}
                 </div>
             </div>
         </div>

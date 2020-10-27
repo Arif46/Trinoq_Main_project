@@ -1,10 +1,11 @@
+
 <header class="ax-header haeder-default light-logo-version header-transparent axil-header-sticky">
     <div class="header-wrapper">
         <div class="container">
             <div class="row align-items-center">
                 <div class="col-lg-3 col-md-6 col-sm-6 col-8 header-left">
                     <div class="logo">
-                        <a href="#">
+                        <a href="{{url('/') }}">
                             <img style="height: 50px;" src="{{asset('front_end/images/logo/Asset 9.png') }}" alt="">
                         </a>
                     </div>
@@ -24,7 +25,7 @@
                                         <li><a href="single-service.html">Mobile Application</a></li>
                                     </ul>
                                 </li>
-                                <li><a href="about.html">About Us</a></li>
+                                <li><a href="{{ url('/About') }}">About Us</a></li>
                                 <li class="has-dropdown"><a href="#">Blog</a>
                                     <ul class="axil-submenu">
                                         <li><a href="blog.html">Blog List</a></li>
@@ -89,3 +90,4 @@
         </div>
     </div>
 </header>
+

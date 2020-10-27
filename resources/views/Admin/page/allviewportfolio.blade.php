@@ -1,8 +1,7 @@
 @extends('admin.maindashboard')
 @section('maincontent')
 
-
- </section>
+ {{-- </section> --}}
  <section class="content">
   <div class="container-fluid">
     <div class="row">
@@ -30,10 +29,10 @@
                   @foreach ($allportfolio as $view_portfolio )
                   <tr>
                     <td>{{ $view_portfolio->id }}</td>
-                    <td>{{ $view_portfolio->portfolio_image }}</td>
+                    <td><img style="width:200px;" src="{{asset('back_end/portfolio_image/'. $view_portfolio->portfolio_image) }}"></td>
                     <td>{{ $view_portfolio->link }}</td>
                     <td>
-                      @if($view_portfolio->status ==0 )
+                      @if($view_portfolio->status ==1 )
                       <a class="UpdatePortfolioStatus" id="portfolio-{{$view_portfolio->id}}" portfolio_id="{{$view_portfolio->id}}" href="javascript:void(0)">Active</a> 
                      @else 
                       <a class="UpdatePortfolioStatus" id="portfolio-{{$view_portfolio->id}}" portfolio_id="{{$view_portfolio->id}}" href="javascript:void(0)">InActive</a> 

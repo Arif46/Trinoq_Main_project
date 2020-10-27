@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class CreatePortfoilsTable extends Migration
+class CreateTestimonialsTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,11 +13,12 @@ class CreatePortfoilsTable extends Migration
      */
     public function up()
     {
-        Schema::create('portfoils', function (Blueprint $table) {
+        Schema::create('testimonials', function (Blueprint $table) {
             $table->bigIncrements('id');
-            $table->string('portfolio_image');
-            $table->string('link')->nullable();
-            $table->text('details')->nullable();
+            $table->string('name');
+            $table->string('title');
+            $table->text('comment_details');
+            $table->string('image');
             $table->boolean('status')->default(0);
             $table->timestamps();
         });
@@ -30,6 +31,6 @@ class CreatePortfoilsTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('portfoils');
+        Schema::dropIfExists('testimonials');
     }
 }

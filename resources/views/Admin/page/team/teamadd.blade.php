@@ -1,8 +1,9 @@
 @extends('admin.maindashboard')
 @section('maincontent')
-<form method="post" action="{{url('/Portfolioinsert')}}" enctype="multipart/form-data">   
+
+<form method="post" action="{{url('/TeamdataAdd')}}" enctype="multipart/form-data">   
      <div class="col-lg-9 col-md-9 col-12 text-center" style="font-family:Comic Sans MS, cursive, sans-serif">
-        <h2>Portfolio Web Add </h2>
+        <h2>Trinoq Member  Add </h2>
     </div>
     <div class="container-fulid">
         <div class="col-lg-9 col-md-9 col-12">
@@ -13,36 +14,40 @@
                 </div>
                 @endif
                 @if ($errors->any())
-    <div class="alert alert-danger">
-        <ul>
-            @foreach ($errors->all() as $error)
-                <li>{{ $error }}</li>
-            @endforeach
-        </ul>
-    </div>
-@endif
+                <div class="alert alert-danger">
+                    <ul>
+                        @foreach ($errors->all() as $error)
+                            <li>{{ $error }}</li>
+                        @endforeach
+                    </ul>
+                </div>
+            @endif
+
                 @csrf
                 <div class="card-body">
+                 
                   <!-- Color Picker -->
                   <div class="form-group">
-                    <label>Portfolio Web image Add</label>
-                    <input type="file" name="portfolio_image" id="portfolio_image" class="form-control my-colorpicker1">
-                  </div>
-                  <!-- /.form group -->
-  
-                  <!-- Color Picker -->
-                  <div class="form-group">
-                    <label>Link Add (Optional)</label>
+                    <label> Name</label>
   
                     <div class="input-group my-colorpicker2">
-                      <input type="text" name="link"  id="link" class="form-control">
-  
-                      <div class="input-group-append">
-                        <span class="input-group-text"><i class="fas fa-square"></i></span>
-                      </div>
+                      <input type="text" name="name"  required id="name" class="form-control">
                     </div>
+
+                    <label>position</label>
+  
+                    <div class="input-group my-colorpicker2">
+                      <input type="text" name="position"  id="position" class="form-control">
+                    </div>
+                    <div class="form-group">
+                        <label>Image</label>
+                        <input type="file" name="image" id="image"  class="form-control my-colorpicker1">
+                      </div>
+
+                  
                     <!-- /.input group -->
                   </div>
+                 
                  
                 </div>
                 <!-- /.card-body -->
@@ -57,5 +62,5 @@
         <button type="submit" class="btn btn-success btn-lg btn-block">Save</button>
     </div>
 </form>
-
+    
 @endsection
