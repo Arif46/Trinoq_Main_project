@@ -18,6 +18,7 @@ class MobileController extends Controller
     {
         Validator::make($request->all(), [
             'portfolio_mobile_image' => 'required|image|mimes:jpeg,png,jpg,bmp,gif,svg|max:2048',
+            'portfolio_mobile_Type'=>'required',
         ])->validate();
 
         $portfolioweb = new Mobile;
@@ -27,6 +28,7 @@ class MobileController extends Controller
             Image::make( $image )->resize( 1900, 1140 )->save( public_path( 'back_end/portfolio_mobile_image/' . $filename ) );
             $portfolioweb->portfolio_mobile_image = $filename;
         }
+        $portfolioweb->portfolio_mobile_Type=$request->portfolio_mobile_Type;
         $portfolioweb->link=$request->link;
         $portfolioweb->details=$request->details;
        

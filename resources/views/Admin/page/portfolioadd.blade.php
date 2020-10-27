@@ -32,17 +32,26 @@
   
                   <!-- Color Picker -->
                   <div class="form-group">
-                    <label>Link Add (Optional)</label>
+                    <label>Portfolio Type</label>
   
                     <div class="input-group my-colorpicker2">
-                      <input type="text" name="link"  id="link" class="form-control">
-  
-                      <div class="input-group-append">
-                        <span class="input-group-text"><i class="fas fa-square"></i></span>
-                      </div>
+                      <input type="text" name="Portfolio_type"  id="Portfolio_type" class="form-control">   
                     </div>
                     <!-- /.input group -->
                   </div>
+                  <div class="form-group">
+                    <label>Link Add </label>
+  
+                    <div class="input-group my-colorpicker2">
+                      <input type="text" name="link"  id="link" class="form-control">   
+                    </div>
+                    <!-- /.input group -->
+                  </div>
+                  <div class="form-group">
+                    <label>details</label>
+        
+                    <textarea class="form-control"   name="details"  id="details" cols="30" rows="10"></textarea>
+                    </div>
                  
                 </div>
                 <!-- /.card-body -->

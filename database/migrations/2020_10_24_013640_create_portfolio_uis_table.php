@@ -16,6 +16,7 @@ class CreatePortfolioUisTable extends Migration
         Schema::create('portfolio_uis', function (Blueprint $table) {
             $table->bigIncrements('id');
             $table->string('portfolio_ui_image');
+            $table->string('portfolio_ui_type');
             $table->string('link')->nullable();
             $table->text('details')->nullable();
             $table->boolean('status')->default(0);

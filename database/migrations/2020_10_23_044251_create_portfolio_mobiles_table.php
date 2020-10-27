@@ -16,6 +16,7 @@ class CreatePortfolioMobilesTable extends Migration
         Schema::create('portfolio_mobiles', function (Blueprint $table) {
             $table->bigIncrements('id');
             $table->string('portfolio_mobile_image');
+            $table->string('portfolio_mobile_Type');
             $table->string('link')->nullable();
             $table->text('details')->nullable();
             $table->boolean('status')->default(0);

@@ -18,6 +18,7 @@
                   <tr>
                     <th>id</th>
                     <th>Portfolio Ui image</th>
+                    <th>Portfolio Ui Type</th>
                     <th>link</th>
                     <th>Details</th>
                     <th>status</th>
@@ -30,6 +31,7 @@
                       <td>{{ $view_uilist->id }}</td>
 
                       <td><img style="width:100px;" src="{{asset('back_end/portfolio_ui_image/'. $view_uilist->portfolio_ui_image ) }}"></td>
+                      <td>{{ $view_uilist->portfolio_ui_type }}</td>
                       <td>{{ $view_uilist->link }}</td>
                       <td>{{ $view_uilist->details }}</td>
                       <td>

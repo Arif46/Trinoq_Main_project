@@ -19,6 +19,7 @@ class UiController extends Controller
     {
         Validator::make($request->all(), [
             'portfolio_ui_image' => 'required|image|mimes:jpeg,png,jpg,bmp,gif,svg|max:2048',
+            'portfolio_ui_type'=>'required',
         ])->validate();
 
         $portfoliouiadd = new Ui;
@@ -29,6 +30,7 @@ class UiController extends Controller
             Image::make( $image )->resize( 1900, 1140 )->save( public_path( 'back_end/portfolio_ui_image/' . $filename ) );
             $portfoliouiadd->portfolio_ui_image = $filename;
         }
+        $portfoliouiadd->portfolio_ui_type=$request->portfolio_ui_type;
         $portfoliouiadd->link=$request->link;
         $portfoliouiadd->details=$request->details;
        

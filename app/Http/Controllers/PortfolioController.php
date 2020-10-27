@@ -17,7 +17,8 @@ class PortfolioController extends Controller
     public function index(Request $request)
     {
         Validator::make($request->all(), [
-            'portfolio_image' => 'required|image|mimes:jpeg,png,jpg,bmp,gif,svg|max:2048',
+            'portfolio_image' => 'required|image|mimes:jpeg,png,jpg,bmp,gif,svg',
+            'Portfolio_type' => 'required', 
         ])->validate();
 
         $portfolioadd = new Portfolio;
@@ -27,7 +28,9 @@ class PortfolioController extends Controller
             Image::make( $image )->resize( 1900, 1140 )->save( public_path( 'back_end/portfolio_image/' . $filename ) );
             $portfolioadd->portfolio_image = $filename;
         }
+        $portfolioadd->Portfolio_type=$request->Portfolio_type;
         $portfolioadd->link=$request->link;
+        $portfolioadd->details=$request->details;
         $portfolioadd->save();
 
         return back()->with('message','Portfolio data Sucessfully added');

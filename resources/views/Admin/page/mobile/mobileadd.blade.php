@@ -29,18 +29,22 @@
                     <label>Portfolio mobile Image Add</label>
                     <input type="file" name="portfolio_mobile_image" id="portfolio_mobile_image"  class="form-control my-colorpicker1">
                   </div>
-                  <!-- /.form group -->
+                  <div class="form-group">
+                    <label>Portfolio Mobile Type </label>
   
-                  <!-- Color Picker -->
+                    <div class="input-group my-colorpicker2">
+                      <input type="text" name="portfolio_mobile_Type"  id="portfolio_mobile_Type" class="form-control">
+  
+                    </div>
+
+    
+                  </div>
                   <div class="form-group">
                     <label>Link Add (Optional)</label>
   
                     <div class="input-group my-colorpicker2">
                       <input type="text" name="link"  id="link" class="form-control">
   
-                      <div class="input-group-append">
-                        <span class="input-group-text"><i class="fas fa-square"></i></span>
-                      </div>
                     </div>
 
                     <div class="form-group">

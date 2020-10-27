@@ -16,6 +16,7 @@ class CreatePortfoilsTable extends Migration
         Schema::create('portfoils', function (Blueprint $table) {
             $table->bigIncrements('id');
             $table->string('portfolio_image');
+            $table->string('Portfolio_type');
             $table->string('link')->nullable();
             $table->text('details')->nullable();
             $table->boolean('status')->default(0);

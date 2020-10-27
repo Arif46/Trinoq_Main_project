@@ -18,6 +18,7 @@
                   <tr>
                     <th>id</th>
                     <th>Portfolio Mobile image</th>
+                    <th>Portfolio Mobile type</th>
                     <th>link</th>
                     <th>Details</th>
                     <th>status</th>
@@ -30,6 +31,7 @@
                       <td>{{ $view_weblist->id }}</td>
 
                       <td><img style="width:100px;" src="{{asset('back_end/portfolio_mobile_image/'. $view_weblist->portfolio_mobile_image ) }}"></td>
+                      <td>{{ $view_weblist->portfolio_mobile_Type }}</td>
                       <td>{{ $view_weblist->link }}</td>
                       <td>{{ $view_weblist->details }}</td>
                       <td>

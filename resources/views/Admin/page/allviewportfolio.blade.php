@@ -20,7 +20,9 @@
                 <tr>
                   <th>id</th>
                   <th>Portfolio image</th>
+                  <th>Portfolio type</th>
                   <th>link</th>
+                  <th>Details</th>
                   <th>status</th>
                   <th>Actions</th>
                 </tr>
@@ -30,7 +32,9 @@
                   <tr>
                     <td>{{ $view_portfolio->id }}</td>
                     <td><img style="width:200px;" src="{{asset('back_end/portfolio_image/'. $view_portfolio->portfolio_image) }}"></td>
+                    <td>{{ $view_portfolio->Portfolio_type }}</td>
                     <td>{{ $view_portfolio->link }}</td>
+                    <td>{{ $view_portfolio->details }}</td>
                     <td>
                       @if($view_portfolio->status ==1 )
                       <a class="UpdatePortfolioStatus" id="portfolio-{{$view_portfolio->id}}" portfolio_id="{{$view_portfolio->id}}" href="javascript:void(0)">Active</a> 

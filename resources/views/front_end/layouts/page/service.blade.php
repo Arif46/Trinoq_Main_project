@@ -5,9 +5,7 @@
                 <div class="section-title text-center">
                     <span class="sub-title extra08-color wow" data-splitting="">what we can do for you</span>
                     <h2 class="title wow" data-splitting=""><span>Services we can help you with</span></h2>
-                    <p class="subtitle-2 wow" data-splitting="">Nulla facilisi. Nullam in magna id dolor
-                        blandit rutrum eget vulputate
-                        augue sed eu leo eget risus imperdiet.</p>
+                   
                 </div>
             </div>
         </div>
@@ -18,17 +16,20 @@
                     <div class="inner">
                         <div class="icon">
                             <div class="icon-inner">
-                                <img src="assets\images\icons\layer.svg" alt="Icon Images">
-                                <div class="image-2"><img src="assets\images\icons\3d.svg" alt="Shape Images" style="height: 40px;"></div>
+                                <img src="{{asset('front_end\images\icons\layer.svg') }}" alt="Icon Images">
+                                <div class="image-2"><img src="{{asset('front_end\images\icons\3d.svg') }}" alt="Shape Images" style="height: 40px;"></div>
                             </div>
                         </div>
                         <div class="content">
                             <h4 class="title wow"><a href="single-service.html">3D Design</a></h4>
                             <p class="wow">
-                                The design trends are growing. and we are not behind it. We do 3D alongside with the stunning 2D designs.
+                                3D Design plays a vital role in the present current modern competitive internet world.
+                                The illustrations structuring has turned into a necessary piece of any business and event.Giving the web-realistic pictures, banners and logo design for a wide range of organizations, Trinoq Technology designs its items specifically in light of the web and subsequently focuses around the mind of the visual contact with the utilization of the most advanced technologies.
+                                
+                                
                             </p>
-                            <a class="axil-button" data-hover="Learn More" href="single-service.html">Learn
-                                More</a>
+                            {{-- <a class="axil-button" data-hover="Learn More" href="single-service.html">Learn
+                                More</a> --}}
                         </div>
                     </div>
                 </div>
@@ -41,14 +42,17 @@
                     <div class="inner">
                         <div class="icon gradient-color-02">
                             <div class="icon-inner">
-                                <img src="assets\images\icons\layer.svg" alt="Icon Images">
-                                <div class="image-2"><img src="assets\images\icons\motion.svg" alt="Shape Images" style="height: 40px;"></div>
+                                <img src="{{asset('front_end\images\icons\layer.svg')}}" alt="Icon Images">
+                                <div class="image-2"><img src="{{asset('front_end\images\icons\motion.svg') }}" alt="Shape Images" style="height: 40px;"></div>
                             </div>
                         </div>
                         <div class="content">
                             <h4 class="title wow"><a href="single-service.html">Motion Graphics</a></h4>
-                            <p class="wow">We think the eyes are the first couple to judge. And we make an impression. A good one.</p>
-                            <a class="axil-button" href="single-service.html">Learn More</a>
+                            <p class="wow">Motion Design plays a vital role in the present current modern competitive internet world.
+                                The illustrations structuring has turned into a necessary piece of any business and event.Giving the web-realistic pictures, banners and logo design for a wide range of organizations, Trinoq Technology designs its items specifically in light of the web and subsequently focuses around the mind of the visual contact with the utilization of the most advanced technologies.
+                                
+                                </p>
+                          
                         </div>
                     </div>
                 </div>
@@ -61,14 +65,17 @@
                     <div class="inner">
                         <div class="icon gradient-color-03">
                             <div class="icon-inner">
-                                <img src="assets\images\icons\layer.svg" alt="Icon Images">
-                                <div class="image-2"><img src="assets\images\icons\graphic.svg" alt="Shape Images" style="height: 40px;"></div>
+                                <img src="{{asset('front_end\images\icons\layer.svg') }}" alt="Icon Images">
+                                <div class="image-2"><img src="{{asset('front_end\images\icons\graphic.svg') }}" alt="Shape Images" style="height: 40px;"></div>
                             </div>
                         </div>
                         <div class="content">
                             <h4 class="title wow"><a href="single-service.html">Branding</a></h4>
-                            <p class="wow">A good branding means good growing. We know how to make love at first sight with your brand. Yes we do.</p>
-                            <a class="axil-button" href="single-service.html">Learn More</a>
+                            <p class="wow">Graphics Design plays a vital role in the present current modern competitive internet world.
+                                The illustrations structuring has turned into a necessary piece of any business and event.Giving the web-realistic pictures, banners and logo design for a wide range of organizations, Trinoq Technology designs its items specifically in light of the web and subsequently focuses around the mind of the visual contact with the utilization of the most advanced technologies.
+                                
+                                </p>
+                           
                         </div>
                     </div>
                 </div>
@@ -81,14 +88,15 @@
                     <div class="inner">
                         <div class="icon gradient-color-04">
                             <div class="icon-inner">
-                                <img src="assets\images\icons\layer.svg" alt="Icon Images">
-                                <div class="image-2"><img src="assets\images\icons\smartphone.svg" alt="Shape Images" style="height: 40px;"></div>
+                                <img src="{{asset('front_end\images\icons\layer.svg') }}" alt="Icon Images">
+                                <div class="image-2"><img src="{{asset('front_end\images\icons\smartphone.svg') }}" alt="Shape Images" style="height: 40px;"></div>
                             </div>
                         </div>
                         <div class="content">
                             <h4 class="title wow"><a href="single-service.html">Mobile Application</a></h4>
-                            <p class="wow">The miracle on your palm, what makes it possible? definitely mobile application. and we make miracles too.</p>
-                            <a class="axil-button" href="single-service.html">Learn More</a>
+                            <p class="wow">The miracle on your palm, what makes it posInterest in app development has achieved a new peak and it has paved new ways for developers to go in the extended limit for apps developing. It is a very positive effect of application development in the multiple sections of apps development.
+                                Trinoq Technology takes this chance of huge apps development possibilities and makes the most of the chance to be realistic</p>
+                            {{-- <a class="axil-button" href="single-service.html">Learn More</a> --}}
                         </div>
                     </div>
                 </div>
@@ -101,14 +109,15 @@
                     <div class="inner">
                         <div class="icon gradient-color-06">
                             <div class="icon-inner">
-                                <img src="assets\images\icons\layer.svg" alt="Icon Images">
-                                <div class="image-2"><img src="assets\images\icons\web.svg" alt="Shape Images" style="height: 40px;"></div>
+                                <img src="{{asset('front_end\images\icons\layer.svg') }}" alt="Icon Images">
+                                <div class="image-2"><img src="{{asset('front_end\images\icons\web.svg') }}" alt="Shape Images" style="height: 40px;"></div>
                             </div>
                         </div>
                         <div class="content">
                             <h4 class="title wow"><a href="single-service.html">Web Application</a></h4>
-                            <p class="wow">Who doesn't love to browse? and we are responsible to make it more pleasureable with the latest web technologies and outstanding view.</p>
-                            <a class="axil-button" href="single-service.html">Learn More</a>
+                            <p class="wow">A website promotes your business in the virtual world. It represents your product and business quality and justification.
+                                We don't build your only website  we make your right business audience.</p>
+                  
                         </div>
                     </div>
                 </div>
@@ -121,14 +130,14 @@
                     <div class="inner">
                         <div class="icon gradient-color-05">
                             <div class="icon-inner">
-                                <img src="assets\images\icons\layer.svg" alt="Icon Images">
-                                <div class="image-2"><img src="assets\images\icons\uxui.svg" alt="Shape Images" style="height: 40px;"></div>
+                                <img src="{{asset('front_end\images\icons\layer.svg') }}" alt="Icon Images">
+                                <div class="image-2"><img src="{{asset('front_end\images\icons\uxui.svg') }}" alt="Shape Images" style="height: 40px;"></div>
                             </div>
                         </div>
                         <div class="content">
-                            <h4 class="title wow"><a href="single-service.html">UX/UI Design</a></h4>
-                            <p class="wow">Make your application out of the world. we mean make it as you can imagine. we are bound to give the best user experience with best user interface.</p>
-                            <a class="axil-button" href="single-service.html">Learn More</a>
+                            <h4 class="title wow"><a href="single-service.html">Desktop Application</a></h4>
+                            <p class="wow">We offer platform-specific and cross-platform desktop app development services to help you turn a solid software idea into a market sensation, as well as couple your manufactured devices and equipment with complementary software to gain customer loyalty and outdo competitors.</p>
+                          
                         </div>
                     </div>
                 </div>
