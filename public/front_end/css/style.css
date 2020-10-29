@@ -462,6 +462,7 @@ body {
   body {
     font-size: 16px;
     line-height: 26px;
+    margin-left: 30px;
   }
 }
 
@@ -650,6 +651,7 @@ h6 {
   h2 {
     font-size: 30px;
     line-height: 40px;
+    margin-left: 38px;
   }
   h2 br {
     display: none;
@@ -11265,7 +11267,7 @@ Header Styles
 
 @media only screen and (max-width: 767px) {
   .haeder-default.header-transparent {
-    padding: 20px 0 0;
+    padding: 53px 0 0;
   }
 }
 
@@ -12800,6 +12802,7 @@ a.axil-link:hover::after {
 @media only screen and (max-width: 767px) {
   .section-title span.sub-title {
     margin-bottom: 10px;
+    margin-left: 125px;
   }
 }
 
@@ -16228,7 +16231,7 @@ Axil Case Study
 @media only screen and (max-width: 767px) {
   .axil-featured-activation ul.slick-dots {
     bottom: -30px;
-    left: 9px;
+    left: 100px;
     width: auto;
   }
 }
@@ -17348,6 +17351,7 @@ Slider Style One
     margin-bottom: 7px;
     font-size: 31px !important;
     line-height: 42px !important;
+    margin-left: 50px;
   }
 }
 
@@ -17358,12 +17362,14 @@ Slider Style One
 @media only screen and (min-width: 768px) and (max-width: 991px) {
   .axil-slide.slide-style-default .content p {
     margin-bottom: 19px;
+   
   }
 }
 
 @media only screen and (max-width: 767px) {
   .axil-slide.slide-style-default .content p {
     margin-bottom: 19px;
+    margin-left: 50px;
   }
 }
 
@@ -18898,6 +18904,7 @@ ul.axil-breadcrumb li.axil-breadcrumb-item + .axil-breadcrumb-item::before {
 @media only screen and (max-width: 767px) {
   .axil-featured .inner .section-title p.subtitle-2 {
     margin-bottom: 20px;
+    margin-left: 38px;
   }
 }
 
@@ -18914,6 +18921,7 @@ ul.axil-breadcrumb li.axil-breadcrumb-item + .axil-breadcrumb-item::before {
   .axil-featured .inner .axil-counterup-area {
     margin: 0 -15px;
     margin-bottom: 30px;
+    margin-left: 30px;
   }
 }
 

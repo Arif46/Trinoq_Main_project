@@ -28,6 +28,11 @@ use Illuminate\Support\Facades\Route;
     Route::get('/login','AuthController@index')->name('login');
     Route::get('/','HomeController@index');
     Route::get('/About','AboutController@about')->name('About');
+    Route::get('/Contact','AboutController@contact')->name('Contact');
+    Route::post('/Contactinsert','AboutController@create')->name('Contactinsert');
+    Route::get('/uidetails/{id}','HomeController@getuiallinfo')->name('uidetails');
+    Route::get('/Mobiledetails/{id}','HomeController@getmobileallinfo')->name('Mobiledetails');
+    Route::get('/Webdetails/{id}','HomeController@getweballinfo')->name('Webdetails');
    
     
    
@@ -82,6 +87,13 @@ Route::group(['middleware' =>['auth']],function(){
      Route::get('/AllMember','TeamController@GetAllMember')->name('AllMember');
      Route::post('/changeteamstatus','TeamController@changestatus')->name('changeteamstatus');
      Route::get('/Delete-Team/{id}','TeamController@deleteteam');
+     //Finished Team
+
+     //Allusercontact information
+
+     Route::get('/AllContactUser','AboutController@getallContactuser')->name('AllContactUser');
+     Route::get('/Delete-Contact/{id}','AboutController@deletecontact');
+
    
 
 });

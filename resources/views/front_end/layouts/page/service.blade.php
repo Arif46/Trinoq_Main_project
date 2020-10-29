@@ -1,4 +1,4 @@
-<div class="axil-service-area ax-section-gap bg-color-white">
+<div id ="services" class="axil-service-area ax-section-gap bg-color-white">
     <div class="container">
         <div class="row">
             <div class="col-lg-12">
@@ -12,7 +12,7 @@
         <div class="row">
             <!-- Start Single Service -->
             <div class="col-lg-4 col-md-6 col-sm-6 col-12 move-up wow">
-                <div class="axil-service text-center axil-control paralax-image">
+                <div id="3ddesign" class="axil-service text-center axil-control paralax-image">
                     <div class="inner">
                         <div class="icon">
                             <div class="icon-inner">
@@ -38,7 +38,7 @@
 
             <!-- Start Single Service -->
             <div class="col-lg-4 col-md-6 col-sm-6 col-12 move-up wow">
-                <div class="axil-service text-center axil-control paralax-image active">
+                <div id="Motiongraphics" class="axil-service text-center axil-control paralax-image active">
                     <div class="inner">
                         <div class="icon gradient-color-02">
                             <div class="icon-inner">
@@ -61,7 +61,7 @@
 
             <!-- Start Single Service -->
             <div class="col-lg-4 col-md-6 col-sm-6 col-12 move-up wow">
-                <div class="axil-service text-center axil-control paralax-image">
+                <div id="branding" class="axil-service text-center axil-control paralax-image">
                     <div class="inner">
                         <div class="icon gradient-color-03">
                             <div class="icon-inner">
@@ -84,7 +84,7 @@
 
             <!-- Start Single Service -->
             <div class="col-lg-4 col-md-6 col-sm-6 col-12 move-up wow">
-                <div class="axil-service text-center axil-control paralax-image">
+                <div id="mobile" class="axil-service text-center axil-control paralax-image">
                     <div class="inner">
                         <div class="icon gradient-color-04">
                             <div class="icon-inner">
@@ -105,7 +105,7 @@
 
             <!-- Start Single Service -->
             <div class="col-lg-4 col-md-6 col-sm-6 col-12 move-up wow">
-                <div class="axil-service text-center axil-control paralax-image">
+                <div id="web" class="axil-service text-center axil-control paralax-image">
                     <div class="inner">
                         <div class="icon gradient-color-06">
                             <div class="icon-inner">

@@ -15,7 +15,7 @@ class HomeController extends Controller
 {
     public function index()
     {
-        $trinoqteam=Team::where('status',1)->OrderBy('id','DESC')->get();
+        $trinoqteam=Team::where('status',1)->OrderBy('id','ASC')->take(8)->get();
         $trinoqclient=Client::where('status',1)->OrderBy('id','DESC')->take(6)->get();
         $uidesign=Ui::where('status',1)->OrderBy('id','DESC')->take(8)->get();
         $Mobiledesign=Mobile::where('status',1)->OrderBy('id','DESC')->take(8)->get();
@@ -23,6 +23,23 @@ class HomeController extends Controller
         $testimonialsview=Testimonials::where('status',1)->OrderBy('id','DESC')->take(4)->get();
         return view('front_end.layouts.page.content',compact('trinoqteam','trinoqclient','uidesign','Mobiledesign','PortfolioWebdesign','testimonialsview'));
 
+    }
+    public function getuiallinfo($id)
+    {
+        $uidetails=Ui::where('id',$id)->get();
+         
+       return view('front_end.layouts.page.uidetails',compact('uidetails'));
+      
+    }
+    public function getmobileallinfo($id)
+    {
+        $mobiledetails=Mobile::where('id',$id)->get();
+        return view('front_end.layouts.page.mobiledetails',compact('mobiledetails'));
+    }
+    public function getweballinfo($id)
+    {
+        $webdetails=Portfolio::where('id',$id)->get();
+        return view('front_end.layouts.page.webdetails',compact('webdetails'));
     }
   
 

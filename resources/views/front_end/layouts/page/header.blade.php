@@ -15,44 +15,41 @@
                         <!-- Start Mainmanu Nav -->
                         <nav class="mainmenu-nav d-none d-lg-block">
                             <ul class="mainmenu">
-                                <li class="has-dropdown"><a href="services.html">Services</a>
+                                <li><a href="{{ url('/') }}">Home</a></li>
+                                <li class="has-dropdown"><a href="#services">Services</a>
                                     <ul class="axil-submenu">
-                                        <li><a href="single-service.html">UX/UI</a></li>
-                                        <li><a href="single-service.html">Motion Graphic</a></li>
-                                        <li><a href="single-service.html">Branding</a></li>
-                                        <li><a href="single-service.html">3D Design</a></li>
-                                        <li><a href="single-service.html">Web Application</a></li>
-                                        <li><a href="single-service.html">Mobile Application</a></li>
+                                        <li><a href="#ui">UX/UI</a></li>
+                                        <li><a href="#Motiongraphics">Motion Graphic</a></li>
+                                        <li><a href="#branding">Branding</a></li>
+                                        <li><a href="#3ddesign">3D Design</a></li>
+                                        <li><a href="#web">Web Application</a></li>
+                                        <li><a href="#mobile">Mobile Application</a></li>
                                     </ul>
                                 </li>
                                 <li><a href="{{ url('/About') }}">About Us</a></li>
-                                <li class="has-dropdown"><a href="#">Blog</a>
+                                {{-- <li class="has-dropdown"><a href="#">Blog</a>
                                     <ul class="axil-submenu">
                                         <li><a href="blog.html">Blog List</a></li>
                                         <li><a href="blog-details.html">Blog Details</a></li>
                                     </ul>
-                                </li>
-                                <li class="has-dropdown"><a href="#">Pages</a>
+                                </li> --}}
+                                {{-- <li class="has-dropdown"><a href="#">Pages</a>
                                     <ul class="axil-submenu">
                                         <li><a href="team-details.html">Team Details</a></li>
                                         <li><a href="comming-soon.html">Comming Soon</a></li>
                                         <li><a href="404.html">404 Page</a></li>
                                     </ul>
-                                </li>
-                                <li><a href="portfolio.html">Portfolio</a></li>
-                                <li><a href="team.html">Team</a></li>
-                                <li><a href="contact.html">Contact</a></li>
+                                </li> --}}
+                                <li><a href="#portfolio">Portfolio</a></li>
+                                <li><a href="#team">Team</a></li>
+                                <li><a href="{{url('/Contact') }}">Contact</a></li>
 
                             </ul>
                         </nav>
                         <!-- End Mainmanu Nav -->
                         <div class="axil-header-extra d-flex align-items-center">
 
-                            <!-- Start Search Area -->
-                            <div class="ax-search-area ml--40 ml_sm--10">
-                                <a class="search-trigger" href="#"><i class="fas fa-search"></i></a>
-                            </div>
-                            <!-- End Search Area -->
+                           
 
                             <!-- Start Hamburger -->
                             <div class="ax-hamburger ml--40 ml_sm--10 d-none d-lg-block">

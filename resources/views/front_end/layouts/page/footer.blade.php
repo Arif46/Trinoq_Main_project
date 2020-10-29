@@ -26,14 +26,19 @@
                     <!-- Start Single Widget -->
                     <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
                         <div class="footer-widget-item axil-border-right">
-                            <h2>Get in touch!</h2>
-                            <p>Fusce varius, dolor tempor interdum tristique, dui urna <br> bibendum magna, ut ullamcorper purus</p>
-                                <div class="axil-newsletter">
-                                    <form class="newsletter-form" action="#">
-                                        <input type="email" placeholder="Email">
-                                        <a class="axil-button btn-transparent" href="#"><span class="button-text">Subscribe</span><span class="button-icon"></span></a>
-                                    </form>
-                                </div>
+                            <h2>Our Office</h2>
+                            <div class="axil-contact-info">
+                                <address class="address">
+                                    <h4>Trinoq Technology</h4><p><br>Road#01 <br>Sector #7,Uttara-1230 <br>Dhaka,Bangladesh </p>
+                                </address>
+                                 <h5>hr.info@trinoq.com</h5>
+                                <address class="address">
+                                    <span class="title">We're Available 24/ 7. Call Now.</span>
+                                    <p><a class="tel"><i class="fas fa-phone"></i>(880)
+                                           01517-852575</a></p>
+                                    <p><a class="tel" ><i class="fas fa-fax"></i>01776054918</a></p>
+                                </address>
+                            </div>        
                         </div>
                     </div>
                     <!-- End Single Widget -->
@@ -44,12 +49,12 @@
                             <h6 class="title">Services</h6>
                             <div class="footer-menu-container">
                                 <ul class="ft-menu liststyle link-hover">
-                                    <li><a href="#">Branding</a></li>
-                                    <li><a href="#">Web App</a></li>
-                                    <li><a href="#">Mobile App</a></li>
-                                    <li><a href="#">UX/UI</a></li>
-                                    <li><a href="#">Motion Design</a></li>
-                                    <li><a href="#">3D Design</a></li>
+                                    <li><a href="#ui">UX/UI</a></li>
+                                    <li><a href="#Motiongraphics">Motion Graphic</a></li>
+                                    <li><a href="#branding">Branding</a></li>
+                                    <li><a href="#3ddesign">3D Design</a></li>
+                                    <li><a href="#web">Web Application</a></li>
+                                    <li><a href="#mobile">Mobile Application</a></li>
                                 </ul>
                             </div>
                         </div>
@@ -57,18 +62,7 @@
                     <!-- End Single Widget -->
 
                     <!-- Start Single Widget -->
-                    <div class="col-xl-2 col-lg-6 col-md-6 col-sm-6 col-12 mt_lg--30 mt_md--30 mt_sm--30">
-                        <div class="footer-widget-item">
-                            <h6 class="title">Resourses</h6>
-                            <div class="footer-menu-container">
-                                <ul class="ft-menu liststyle link-hover">
-                                    <li><a href="blog.html">Blog</a></li>
-                                    <li><a href="case-study.html">Case Studies</a></li>
-                                    <li><a href="portfolio.html">Portfolio</a></li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
+                   
                     <!-- End Single Widget -->
 
                     <!-- Start Single Widget -->
@@ -77,7 +71,7 @@
                             <h6 class="title">Support</h6>
                             <div class="footer-menu-container">
                                 <ul class="ft-menu liststyle link-hover">
-                                    <li><a href="contact.html">Contact</a></li>
+                                    <li><a href="{{url('/Contact') }}">Contact</a></li>
                                     <li><a href="privacy-policy.html">Privacy Policy</a></li>
                                     <li><a href="#">Sitemap</a></li>
                                 </ul>
@@ -95,7 +89,7 @@
                 <div class="row row--0 ptb--20 axil-basic-thine-line">
                     <div class="col-lg-6 col-md-6 col-sm-12 col-12">
                         <div class="inner text-center text-md-left">
-                            <p>© 2020. All rights reserved by Trinoq.</p>
+                            <p>2018-2020. All rights reserved by @Trinoq Technology</p>
                         </div>
                     </div>
                     <div class="col-lg-6 col-md-6 col-sm-12 col-12">
