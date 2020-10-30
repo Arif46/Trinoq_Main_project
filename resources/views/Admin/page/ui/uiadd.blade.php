@@ -1,4 +1,4 @@
-@extends('admin.maindashboard')
+@extends('Admin.maindashboard')
 @section('maincontent')
 
 <form method="post" action="{{url('/UiInsert')}}" enctype="multipart/form-data">   

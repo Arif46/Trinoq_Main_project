@@ -43,7 +43,7 @@ class TestimonialsController extends Controller
     public function GetAllTestimonials()
     {
         $alltestimonials=Testimonials::all();
-        return view('admin.page.testimonials.alltestimonials',compact('alltestimonials'));
+        return view('Admin.page.testimonials.alltestimonials',compact('alltestimonials'));
     }
     public function changestatus(Request $request)
     {

@@ -1,4 +1,4 @@
-@extends('admin.maindashboard')
+@extends('Admin.maindashboard')
 @section('maincontent')
 <form method="post" action="{{url('/Portfolioinsert')}}" enctype="multipart/form-data">   
      <div class="col-lg-9 col-md-9 col-12 text-center" style="font-family:Comic Sans MS, cursive, sans-serif">

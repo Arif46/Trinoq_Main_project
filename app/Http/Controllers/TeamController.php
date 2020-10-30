@@ -12,7 +12,7 @@ class TeamController extends Controller
 {
     public function teampageadd()
     {
-        return view('admin.page.team.teamadd');
+        return view('Admin.page.team.teamadd');
     }
 
     public function create(Request $request)
@@ -43,7 +43,7 @@ class TeamController extends Controller
     public function GetAllMember()
     {
         $allteammember=Team::get();
-        return view('admin.page.team.allteammember',compact('allteammember'));
+        return view('Admin.page.team.allteammember',compact('allteammember'));
     }
 
     public function changestatus(Request $request)

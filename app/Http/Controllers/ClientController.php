@@ -12,7 +12,7 @@ class ClientController extends Controller
 {
     public function pageadd()
     {
-         return view('admin.page.client.clientadd');
+         return view('Admin.page.client.clientadd');
     }
     public function create(Request $request)
     {
@@ -45,7 +45,7 @@ class ClientController extends Controller
 
     {
         $allclient=Client::get();
-        return view('admin.page.client.allclient',compact('allclient'));
+        return view('Admin.page.client.allclient',compact('allclient'));
     }
 
     public function changeclientstatus(Request $request)

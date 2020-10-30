@@ -12,7 +12,7 @@ class MobileController extends Controller
 {
     public function create()
     {
-        return view('admin.page.mobile.mobileadd');
+        return view('Admin.page.mobile.mobileadd');
     }
     public function index(Request $request)
     {
@@ -41,7 +41,7 @@ class MobileController extends Controller
     public function GetMobilelist()
     {
         $allmobilelist=Mobile::get();
-        return view('admin.page.mobile.mobilelist',compact('allmobilelist'));
+        return view('Admin.page.mobile.mobilelist',compact('allmobilelist'));
     }
     public function GetMobileliststatus(Request $request)
     {

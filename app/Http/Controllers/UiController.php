@@ -12,7 +12,7 @@ class UiController extends Controller
 {
     public function create()
     {
-       return view('admin.page.ui.uiadd');
+       return view('Admin.page.ui.uiadd');
 
     }
     public function index(Request $request)
@@ -42,7 +42,7 @@ class UiController extends Controller
     public function GetUilist()
     {
         $AllUilist=Ui::get();
-        return view('admin.page.ui.uilist',compact('AllUilist'));
+        return view('Admin.page.ui.uilist',compact('AllUilist'));
     }
     public function GetUiliststatus(Request $request)
     {
