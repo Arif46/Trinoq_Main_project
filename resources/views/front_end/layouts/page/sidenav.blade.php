@@ -11,8 +11,8 @@
                 <div class="col-lg-5 col-xl-6 col-12">
                     <ul class="main-navigation">
                         <li><a href="{{ url('/') }}">Home</a></li>
-                        <li><a href="#portfolio">Portfolio</a></li>
-                        <li><a href="#team">Team</a></li>
+                        <li><a href="{{ url('/portfortfoliopage') }}">Portfolio</a></li>
+                        <li><a href="{{ url('/Teampage') }}">Team</a></li>
                         {{-- <li><a href="blog.html">Blogs</a></li> --}}
                         <li><a href="{{url('/Contact') }}">Contact</a></li>
                     </ul>

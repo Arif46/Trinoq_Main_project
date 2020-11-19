@@ -1,4 +1,4 @@
-<div id="portfolio" class="axil-portfolio-area ax-section-gap bg-color-lightest">
+<div  class="axil-portfolio-area ax-section-gap bg-color-lightest">
     <div class="container axil-masonary-wrapper">
         <div class="row align-items-end">
             <div class="col-lg-5 col-md-12">

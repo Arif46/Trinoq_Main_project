@@ -17,9 +17,9 @@ class HomeController extends Controller
     {
         $trinoqteam=Team::where('status',1)->OrderBy('id','ASC')->take(8)->get();
         $trinoqclient=Client::where('status',1)->OrderBy('id','DESC')->take(6)->get();
-        $uidesign=Ui::where('status',1)->OrderBy('id','DESC')->take(8)->get();
-        $Mobiledesign=Mobile::where('status',1)->OrderBy('id','DESC')->take(8)->get();
-        $PortfolioWebdesign=Portfolio::where('status',1)->OrderBy('id','DESC')->take(8)->get();
+        $uidesign=Ui::where('status',1)->OrderBy('id','DESC')->take(2)->get();
+        $Mobiledesign=Mobile::where('status',1)->OrderBy('id','DESC')->take(2)->get();
+        $PortfolioWebdesign=Portfolio::where('status',1)->OrderBy('id','DESC')->take(2)->get();
         $testimonialsview=Testimonials::where('status',1)->OrderBy('id','DESC')->take(4)->get();
         return view('front_end.layouts.page.content',compact('trinoqteam','trinoqclient','uidesign','Mobiledesign','PortfolioWebdesign','testimonialsview'));
 
@@ -41,7 +41,20 @@ class HomeController extends Controller
         $webdetails=Portfolio::where('id',$id)->get();
         return view('front_end.layouts.page.webdetails',compact('webdetails'));
     }
-  
+
+  public function portfolioindividualpage()
+  {
+    $uidesign=Ui::where('status',1)->OrderBy('id','DESC')->take(10)->get();
+    $Mobiledesign=Mobile::where('status',1)->OrderBy('id','DESC')->take(10)->get();
+    $PortfolioWebdesign=Portfolio::where('status',1)->OrderBy('id','DESC')->take(10)->get();
+    return view('front_end.layouts.page.portfolio',compact('uidesign','Mobiledesign','PortfolioWebdesign'));  
+  }
+  public function teamindividualpage()
+  {
+
+    return view('front_end.layouts.page.team'); 
+
+  }
 
 
     

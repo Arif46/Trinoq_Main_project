@@ -40,8 +40,8 @@
                                         <li><a href="404.html">404 Page</a></li>
                                     </ul>
                                 </li> --}}
-                                <li><a href="#portfolio">Portfolio</a></li>
-                                <li><a href="#team">Team</a></li>
+                                <li><a href="{{ url('/portfortfoliopage') }}">Portfolio</a></li>
+                                <li><a href="{{ url('/Teampage') }}">Team</a></li>
                                 <li><a href="{{url('/Contact') }}">Contact</a></li>
 
                             </ul>

@@ -33,6 +33,9 @@ use Illuminate\Support\Facades\Route;
     Route::get('/uidetails/{id}','HomeController@getuiallinfo')->name('uidetails');
     Route::get('/Mobiledetails/{id}','HomeController@getmobileallinfo')->name('Mobiledetails');
     Route::get('/Webdetails/{id}','HomeController@getweballinfo')->name('Webdetails');
+
+    Route::get('/portfortfoliopage','HomeController@portfolioindividualpage')->name('portfortfoliopage');
+    Route::get('/Teampage','HomeController@teamindividualpage')->name('Teampage');
    
     
    
