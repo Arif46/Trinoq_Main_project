@@ -31,7 +31,7 @@ class TeamController extends Controller
         if ( $request->hasFile( 'image' ) ) {
             $image = $request->file( 'image' );
             $filename = time() . '.' . $image->getClientOriginalExtension();
-            Image::make( $image )->resize( 1900, 1140 )->save( public_path( 'back_end/team_image/image/' . $filename ) );
+            Image::make( $image )->resize( 600, 560 )->save( public_path( 'back_end/team_image/image/' . $filename ) );
             $teamadd->image = $filename;
         }
         $teamadd->save();

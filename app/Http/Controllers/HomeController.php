@@ -51,8 +51,8 @@ class HomeController extends Controller
   }
   public function teamindividualpage()
   {
-
-    return view('front_end.layouts.page.team'); 
+    $trinoqteam=Team::where('status',1)->OrderBy('id','ASC')->take(8)->get();
+    return view('front_end.layouts.page.team',compact('trinoqteam')); 
 
   }
 

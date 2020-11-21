@@ -30,7 +30,7 @@ class ClientController extends Controller
         if ( $request->hasFile( 'company_logo' ) ) {
             $image = $request->file( 'company_logo' );
             $filename = time() . '.' . $image->getClientOriginalExtension();
-            Image::make( $image )->resize( 1900, 1140 )->save( public_path( 'back_end/company_logo/' . $filename ) );
+            Image::make( $image )->resize( 90, 44 )->save( public_path( 'back_end/company_logo/' . $filename ) );
             $clientinformationadd->company_logo = $filename;
         }
         $clientinformationadd->details=$request->details;

@@ -30,7 +30,7 @@ class TestimonialsController extends Controller
         if ( $request->hasFile( 'image' ) ) {
             $image = $request->file( 'image' );
             $filename = time() . '.' . $image->getClientOriginalExtension();
-            Image::make( $image )->resize( 1900, 1140 )->save( public_path( 'back_end/image/' . $filename ) );
+            Image::make( $image )->resize( 120, 120 )->save( public_path( 'back_end/image/' . $filename ) );
             $testimonialsadd->image = $filename;
         }
    

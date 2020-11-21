@@ -25,7 +25,7 @@ class PortfolioController extends Controller
         if ( $request->hasFile( 'portfolio_image' ) ) {
             $image = $request->file( 'portfolio_image' );
             $filename = time() . '.' . $image->getClientOriginalExtension();
-            Image::make( $image )->resize( 1900, 1140 )->save( public_path( 'back_end/portfolio_image/' . $filename ) );
+            Image::make( $image )->resize( 400, 380 )->save( public_path( 'back_end/portfolio_image/' . $filename ) );
             $portfolioadd->portfolio_image = $filename;
         }
         $portfolioadd->Portfolio_type=$request->Portfolio_type;

@@ -27,7 +27,7 @@ class UiController extends Controller
         if ( $request->hasFile( 'portfolio_ui_image' ) ) {
             $image = $request->file( 'portfolio_ui_image' );
             $filename = time() . '.' . $image->getClientOriginalExtension();
-            Image::make( $image )->resize( 1900, 1140 )->save( public_path( 'back_end/portfolio_ui_image/' . $filename ) );
+            Image::make( $image )->resize( 400, 380 )->save( public_path( 'back_end/portfolio_ui_image/' . $filename ) );
             $portfoliouiadd->portfolio_ui_image = $filename;
         }
         $portfoliouiadd->portfolio_ui_type=$request->portfolio_ui_type;

@@ -25,7 +25,7 @@ class MobileController extends Controller
         if ( $request->hasFile( 'portfolio_mobile_image' ) ) {
             $image = $request->file( 'portfolio_mobile_image' );
             $filename = time() . '.' . $image->getClientOriginalExtension();
-            Image::make( $image )->resize( 1900, 1140 )->save( public_path( 'back_end/portfolio_mobile_image/' . $filename ) );
+            Image::make( $image )->resize( 400, 380 )->save( public_path( 'back_end/portfolio_mobile_image/' . $filename ) );
             $portfolioweb->portfolio_mobile_image = $filename;
         }
         $portfolioweb->portfolio_mobile_Type=$request->portfolio_mobile_Type;
