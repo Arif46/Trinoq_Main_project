@@ -462,7 +462,6 @@ body {
   body {
     font-size: 16px;
     line-height: 26px;
-    margin-left: 30px;
   }
 }
 
@@ -5894,7 +5893,7 @@ textarea:-ms-input-placeholder {
 
 @media only screen and (max-width: 767px) {
   .ax-section-gap {
-    padding: 60px 0;
+    padding: 60px 24px;
   }
 }
 
