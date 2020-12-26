@@ -20,7 +20,7 @@ class HomeController extends Controller
         $uidesign=Ui::where('status',1)->OrderBy('id','DESC')->take(2)->get();
         $Mobiledesign=Mobile::where('status',1)->OrderBy('id','DESC')->take(2)->get();
         $PortfolioWebdesign=Portfolio::where('status',1)->OrderBy('id','DESC')->take(2)->get();
-        $testimonialsview=Testimonials::where('status',1)->OrderBy('id','DESC')->take(4)->get();
+        $testimonialsview=Testimonials::where('status',1)->OrderBy('id','DESC')->take(2)->get();
         return view('front_end.layouts.page.content',compact('trinoqteam','trinoqclient','uidesign','Mobiledesign','PortfolioWebdesign','testimonialsview'));
 
     }
