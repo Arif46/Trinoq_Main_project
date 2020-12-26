@@ -243,65 +243,37 @@
 
   
 
-    <!-- Start Brand Area -->
-    <div class="axil-team-area ax-section-gap bg-color-lightest">
+  
+
+    <div class="axil-brand-area ax-section-gap bg-color-white">
         <div class="container">
-            <div class="row align-items-end">
-                <div class="col-lg-12 col-xl-4">
-                    <div class="section-title text-left">
-                        <h2 class="title wow mb--0" data-splitting="">Trinoq Client</span></h2>
+            <div class="row align-items-center justify-content-between">
+                <div class="col-xl-4 col-lg-4 col-md-8 col-12">
+                    <div class="section-title">
+                        <span class="sub-title extra06-color wow" data-splitting="">Top Clients</span>
+                        <h2 class="title wow" data-splitting="">We’ve built solutions for...</h2>
+                        <p class="subtitle-2 wow" data-splitting="">Nulla facilisi. Nullam in magna id dolor
+                        blandit rutrum eget.</p>
                     </div>
                 </div>
-                
-            </div>
-            <div class="tab-content" id="myTabContent">
-                <div class="tab-pane fade show active" id="management" role="tabpanel" aria-labelledby="management-tab">
-                    <div class="row">
-                        <!-- Start Single Team  -->
-                      @foreach ($trinoqclient as $view_client )
-                      <div class="col-xl-3 col-lg-6 col-md-6 col-sm-6 col-12 mt--60 mt_sm--30 mt_md--30">
-                        <div class="axil-team">
-                            <div class="inner">
-                                <div class="thumbnail paralax-image">
-                                    <a href="#">
-                                        <img class="w-100" style="width:180px;height:100px " src="{{asset('back_end/company_logo/'. $view_client->company_logo) }}" alt="Team Images">
-                                    </a>
-                                </div>
-                            
-                            </div>
-                        </div>
-                     </div>    
-                      @endforeach
-                       
-                    
-                      
-                        <!-- End Single Team  -->
-
-                      
-
-                    
-                        
-                      
-                      
-                    
-                      
-                    </div>
-                </div>
-
                
-
-                  
-
-                    
-
-                    
+                <div class="col-xl-8 col-lg-8 mt_md--40 mt_sm--40">
+                    @foreach ($trinoqclient as $view_client )
+                    <div class="axil-brand-logo-wrapper">
+                        <ul class="brand-list liststyle d-flex flex-wrap justify-content-center">
+                            <li><a href="#">
+                                <img class="w-100" src="{{asset('back_end/company_logo/'. $view_client->company_logo) }}" alt="Team Images">
+                                </a>
+                            </li>
+                        </ul>
                     </div>
+                    @endforeach 
                 </div>
-
               
-
             </div>
         </div>
+    </div>
+    </div>
     </div>
   
 
