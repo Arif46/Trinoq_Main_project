@@ -1,7 +1,7 @@
 @extends('front_end.layouts.index')
 @section('content')
 <main class="page-wrapper page-team">
-
+     <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
     <!-- Start Breadcrumb Area -->
     <div class="axil-breadcrumb-area breadcrumb-style-2 team-group-thumb pt--170 pb--70 theme-gradient">
         <div class="container">
@@ -117,7 +117,7 @@
         </div> --}}
     </div>
     <!-- End Video Area  -->
-
+  </div>
 </main>
 
 @endsection

@@ -1,10 +1,10 @@
 @extends('front_end.layouts.index')
 @section('content')
 <main class="page-wrapper">
-
+    <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12"> 
     <main class="page-wrapper">
-
         <!-- Start Slider Area -->
+       
         <div class="axil-slider-area axil-slide-activation">
             <!-- Start Single Slide -->
             <div class="axil-slide slide-style-default theme-gradient slider-fixed-height d-flex align-items-center paralax-area">
@@ -315,7 +315,7 @@
     </div>
     <!-- End Call To Action -->
     <!-- End Call To Action  -->
-
+</div>
 </main>
     
 @endsection
