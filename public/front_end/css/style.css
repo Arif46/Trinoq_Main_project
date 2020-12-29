@@ -12374,6 +12374,13 @@ button.axil-button {
   }
 }
 
+@media only screen and (max-width: 550px) {
+  a.axil-button,
+  button.axil-button {
+    font-size: 14px;
+  }
+}
+
 a.axil-button.axil-link-button,
 button.axil-button.axil-link-button {
   color: #000248;
@@ -12801,7 +12808,7 @@ a.axil-link:hover::after {
 @media only screen and (max-width: 767px) {
   .section-title span.sub-title {
     margin-bottom: 10px;
-    margin-left: 125px;
+    margin-left: 0px;
   }
 }
 
@@ -16764,6 +16771,14 @@ Axil Case Study
 }
 
 @media only screen and (min-width: 768px) and (max-width: 991px) {
+  .axil-pricing-table .pricing-header .pricing-get-button a.axil-button {
+    width: auto;
+    margin: 0 auto;
+    padding: 0 13px;
+  }
+}
+
+@media only screen and (min-width: 550px) and (max-width: 700px) {
   .axil-pricing-table .pricing-header .pricing-get-button a.axil-button {
     width: auto;
     margin: 0 auto;
